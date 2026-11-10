@@ -37,15 +37,18 @@
   a { color: var(--accent); }
   ul { padding-left: 1.3em; }
   li { margin-bottom: 0.4em; }
+  .note { color: var(--muted); font-size: 0.92em; }
   code { background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
 </style>
 </head>
 <body>
 
 <h1>Privacy Policy — Jelly Monsters</h1>
-<p class="meta">Effective date: October 26, 2026 &middot; Package: <code>com.jellymonsters.game</code></p>
+<p class="meta">Effective date: November 11, 2026 &middot; Developer: AGL Games &middot; Package: <code>com.jellymonsters.game</code></p>
 
-<p>This Privacy Policy describes how the mobile game <strong>Jelly Monsters</strong> ("the App", "we", "us") handles information when you use it. Jelly Monsters is a single-player casual game. It does not ask you to create an account with us, does not let you enter personal information such as your name, email or phone number, and does not include chat or messaging between players. We do not run our own servers. The only data we store ourselves is a small public game profile (your jelly's look), kept in our Google Firebase project and described below.</p>
+<p>This Privacy Policy describes how the mobile game <strong>Jelly Monsters</strong> ("the App") handles information when you use it. The App is developed by <strong>AGL Games</strong> ("we", "us"), which is responsible for the data described here. You can reach us at <a href="mailto:aglgames.support@gmail.com">aglgames.support@gmail.com</a>.</p>
+
+<p>Jelly Monsters is a single-player casual game. It does not ask you to create an account with us, does not let you enter personal information such as your name, email or phone number, and does not include chat or messaging between players. We do not run our own servers. The only data we store ourselves is a small public game profile (your jelly's look) and your sticker album, kept in our Google Firebase project and described below. These are linked only to game identifiers, not to your name or contact details.</p>
 
 <h2>Information We Collect</h2>
 
@@ -57,12 +60,16 @@
 </ul>
 <p>This data is stored by Google under your Google account, not by us. Signing in to Play Games is optional — the App works without it.</p>
 
+<p><strong>Leaderboards are public.</strong> If you sign in to Play Games, your gamer name, avatar, score and place appear in the App's leaderboards, which every player of Jelly Monsters can see (not only your friends). The top places also show your jelly and the items it wears. To stay out of the leaderboards, play without signing in to Play Games, or hide your game activity in your Play Games profile settings.</p>
+
 <p><strong>Public game profile (Google Firebase).</strong> If you sign in to Google Play Games, the App keeps a small game profile in our Firebase project (Cloud Firestore), so that other players can see your jelly next to your name in leaderboards. It contains only:</p>
 <ul>
   <li>Your Play Games player ID and a Firebase user ID created for it by Firebase Authentication</li>
-  <li>Your jelly's look: the jelly you picked for your profile and the in-game items it wears (for example background, hat, glasses or outfit), stored as item codes</li>
+  <li>Your jelly's look: the jelly you picked for your profile and the in-game items it wears (for example background, hat, glasses or outfit), stored as item codes, and the time it was last updated</li>
 </ul>
-<p>The profile contains no name, email, phone number, location or other personal details. Your jelly's look is visible to other players of the App. Only you can change your profile. It is kept while you play and is deleted on request (see <em>Your Choices and Data Deletion</em>).</p>
+<p>The profile contains no name, email, phone number, location or other personal details. Your jelly's look is visible to other players of the App. Only you can change your profile.</p>
+
+<p><strong>Sticker album (Google Firebase).</strong> If you sign in to Google Play Games, the App also keeps in our Firebase project the list of stickers you have collected, linked to your Firebase user ID. Only you can read or change it. It is used to show how rare each sticker is (for example "Better than X% of players"). For that, the App also keeps anonymous totals — how many players own each sticker and how many players have a given number of stickers. These totals contain no identifiers and cannot be linked to you.</p>
 
 <p><strong>Advertising (Google AdMob).</strong> The App shows ads (full-screen ads between rounds and optional rewarded ads you choose to watch for in-game rewards). AdMob may collect:</p>
 <ul>
@@ -71,7 +78,7 @@
   <li>IP address and approximate location derived from it (city/region level, not precise GPS)</li>
   <li>Ad interactions (ads shown, clicked, watched) and diagnostic information</li>
 </ul>
-<p>Ads may be shown to all users in all regions. This data is used to show, measure and improve ads, to limit how often ads appear, and to prevent fraud. Ads may be personalized based on this data. Where local law requires it (for example in the European Economic Area, the United Kingdom, Switzerland and certain US states), the App asks for your consent or lets you opt out through Google's consent form; if you decline, only non-personalized ads are shown. You can change your choice later from the App.</p>
+<p>Ads may be shown to all users in all regions. This data is used to show, measure and improve ads, to limit how often ads appear, and to prevent fraud. Ads may be personalized based on this data.</p>
 
 <p><strong>Analytics (Google Firebase Analytics).</strong> The App uses Firebase Analytics to understand how the game is played and to fix problems. It may collect:</p>
 <ul>
@@ -81,48 +88,89 @@
 </ul>
 <p>This data is processed by Google on our behalf and is not linked to your name, email or any other directly identifying information.</p>
 
+<p><strong>Consent.</strong> Where local law requires it (for example in the European Economic Area, the United Kingdom, Switzerland and certain US states), the App asks for your consent through Google's consent form before personalized ads and analytics are used. If you decline, only non-personalized ads are shown and analytics run in a limited, consent-free mode. You can change your choice at any time in the App's <em>Settings</em>.</p>
+
 <p><strong>In-app purchases (Google Play Billing).</strong> Purchases are processed entirely by Google Play. We never receive your payment card or billing details. The App only receives the information needed to confirm a purchase and grant the item (product, purchase status and a purchase token).</p>
 
-<p><strong>Network time check.</strong> To verify certain time-based in-game rewards, the App may make a simple request to a Google server to read the current time. No personal data is sent with this request.</p>
+<p><strong>Rating the game (Google Play In-App Review).</strong> The App may occasionally offer Google Play's rating window. Your rating and review go directly to Google Play; the App does not see them.</p>
+
+<p><strong>Network time check.</strong> To verify certain time-based in-game rewards, the App may make a simple request to a Google server (<code>connectivitycheck.gstatic.com</code>) to read the current time. No personal data is sent with this request.</p>
 
 <p><strong>Locally stored data.</strong> The App saves your game progress and settings (scores, levels and stars, coins, boosters, stickers, daily rewards and quests, your jellies' looks and outfits, sound/vibration/language preferences) on your device using Android's local storage. It is deleted if you uninstall the App or clear its data.</p>
 
 <h2>Permissions</h2>
-<p>The App requests only: Internet and network state (ads, analytics, Play Games, game profile, purchases), Google Play Billing (in-app purchases) and vibration (haptic feedback). It does not access your location (GPS), camera, microphone, contacts, photos or files.</p>
+<p>The App requests only: Internet and network state (ads, analytics, Play Games, game profile, purchases), Google Play Billing (in-app purchases), vibration (haptic feedback) and the advertising ID permission added by Google's ads SDK (ads). It does not access your location (GPS), camera, microphone, contacts, photos or files.</p>
 
 <h2>Third-Party Services</h2>
 <p>The App relies on the following third-party services, each governed by its own privacy policy:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Games Services</a> — sign-in, leaderboards, achievements and cloud save.</li>
-  <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a> — advertising, described above.</li>
+  <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a> — advertising and the consent form, described above.</li>
   <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Analytics (Google)</a> — usage analytics, described above.</li>
-  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Authentication and Cloud Firestore (Google)</a> — sign-in for and storage of the public game profile, described above.</li>
-  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Billing</a> — in-app purchases.</li>
+  <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Authentication and Cloud Firestore (Google)</a> — sign-in for and storage of the public game profile and sticker album, described above.</li>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Billing and Google Play In-App Review</a> — in-app purchases and the rating window.</li>
 </ul>
 
 <h2>Data Sharing</h2>
-<p>We do not sell your data. Data is shared only with the Google services listed above, for the purposes described: advertising (AdMob), analytics (Firebase), game features (Play Games and Firebase) and purchases (Play Billing). Your gamer name, score and jelly's look are shown to other players in leaderboards. All data is transmitted over encrypted connections (HTTPS).</p>
+<p>We do not sell your data. Data is shared only with the Google services listed above, for the purposes described: advertising (AdMob), analytics (Firebase), game features (Play Games and Firebase) and purchases (Play Billing). Your gamer name, avatar, score and jelly's look are shown to all players in leaderboards. All data is transmitted over encrypted connections (HTTPS). Google may process data on servers outside your country, including in the United States, under Google's own data-protection terms (such as the EU Standard Contractual Clauses).</p>
+
+<h2>Legal Basis</h2>
+<p>Where data-protection laws such as the EU/UK GDPR apply, we rely on:</p>
+<ul>
+  <li><strong>Providing the game you use</strong> — Play Games sign-in, leaderboards, achievements, cloud save, your public game profile, your sticker album and purchases.</li>
+  <li><strong>Your consent</strong> — personalized ads and analytics, where consent is required. You can withdraw it at any time in the App's <em>Settings</em>.</li>
+  <li><strong>Our legitimate interests</strong> — showing non-personalized ads that keep the game free, preventing fraud, and keeping the game working and secure.</li>
+</ul>
+
+<h2>Data Retention</h2>
+<ul>
+  <li><strong>Public game profile and sticker album:</strong> kept while you play, and deleted within 30 days of your request.</li>
+  <li><strong>Anonymous sticker totals:</strong> kept indefinitely; they contain no identifiers.</li>
+  <li><strong>Analytics data:</strong> kept by Google for the retention period set in our Firebase project, at most 14 months, then deleted automatically.</li>
+  <li><strong>Advertising data:</strong> kept by Google according to its own <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">advertising policies</a>.</li>
+  <li><strong>Play Games data and cloud save:</strong> kept by Google in your Google account until you delete them.</li>
+  <li><strong>Local data:</strong> kept on your device until you uninstall the App or clear its data.</li>
+</ul>
 
 <h2>Children's Privacy</h2>
 <p>The App is a general-audience game and is not directed at children under 13 (or the applicable age of digital consent in your region). We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, please contact us and we will help remove it.</p>
 
-<h2>Your Choices and Data Deletion</h2>
+<h2 id="data-deletion">Your Choices and Data Deletion</h2>
 <ul>
-  <li><strong>Ads:</strong> you can reset or delete your advertising identifier in your device's <em>Settings → Privacy → Ads</em>. In regions where consent is required, you can change your ad consent from the App.</li>
+  <li><strong>Ads and analytics:</strong> in regions where consent is required, you can change your choice at any time in the App's <em>Settings</em>. You can also reset or delete your advertising identifier in your device's <em>Settings → Privacy → Ads</em>.</li>
+  <li><strong>Leaderboards:</strong> play without signing in to Play Games, or hide your game activity in your Play Games profile settings.</li>
   <li><strong>Play Games data:</strong> you can sign out of Play Games, and delete your Play Games profile and game data (including cloud save, achievements and scores) in the Google Play Games app or at <a href="https://myaccount.google.com/" target="_blank" rel="noopener">your Google Account</a>.</li>
-  <li><strong>Public game profile:</strong> deleting your Play Games data does not remove it. To have it deleted, email us at <a href="mailto:aglgames.support@gmail.com">aglgames.support@gmail.com</a> with your Play Games gamer name; we delete it within 30 days.</li>
   <li><strong>Local data:</strong> uninstalling the App or clearing its data removes all progress and settings stored on your device.</li>
-  <li><strong>Analytics data:</strong> it is retained by Google for a limited period and then deleted automatically. You can ask us to delete analytics data linked to your app instance by contacting us.</li>
+  <li><strong>Analytics data:</strong> you can ask us to delete analytics data linked to your app instance by contacting us.</li>
 </ul>
 
+<p><strong>Deleting your game profile and sticker album.</strong> Deleting your Play Games data does not remove the data we keep in Firebase. You do not need to reinstall the App to delete it:</p>
+<ol>
+  <li>Email <a href="mailto:aglgames.support@gmail.com?subject=Delete%20my%20data%20%E2%80%94%20Jelly%20Monsters">aglgames.support@gmail.com</a> with the subject <em>"Delete my data — Jelly Monsters"</em>.</li>
+  <li>Include your Play Games gamer name and, if you can, a screenshot of the App showing it (for example your row in a leaderboard), so we find the right profile. Gamer names are not unique, so we may ask you to confirm the request before deleting anything.</li>
+  <li>We delete your public game profile, your sticker album and the Firebase user ID linked to them within 30 days, and reply to confirm.</li>
+</ol>
+<p class="note">Anonymous sticker totals are not deleted, as they contain no identifiers. Purchase records are kept by Google Play under its own policies.</p>
+
+<h2>Your Rights</h2>
+<p>Depending on where you live (for example in the EEA, the United Kingdom, Switzerland or certain US states), you may have the right to:</p>
+<ul>
+  <li>access the data we hold about you and receive a copy of it;</li>
+  <li>have it corrected or deleted;</li>
+  <li>restrict or object to its use;</li>
+  <li>withdraw your consent at any time, without affecting earlier use;</li>
+  <li>lodge a complaint with your local data-protection authority.</li>
+</ul>
+<p>To use any of these rights, email us at <a href="mailto:aglgames.support@gmail.com">aglgames.support@gmail.com</a>. We reply within 30 days. Data held by Google under your Google account (Play Games, cloud save) can be managed directly at <a href="https://myaccount.google.com/" target="_blank" rel="noopener">your Google Account</a>.</p>
+
 <h2>Data Security</h2>
-<p>We do not operate our own servers. The public game profile is stored in Google Cloud Firestore, where access rules let each player change only their own profile. Data handled by Google Play Games, AdMob, Firebase and Google Play Billing is transmitted over encrypted connections and secured according to Google's own infrastructure and policies.</p>
+<p>We do not operate our own servers. The public game profile and sticker album are stored in Google Cloud Firestore, where access rules let each player change only their own profile and read or change only their own album. Data handled by Google Play Games, AdMob, Firebase and Google Play Billing is transmitted over encrypted connections and secured according to Google's own infrastructure and policies.</p>
 
 <h2>Changes to This Policy</h2>
 <p>We may update this Privacy Policy occasionally to reflect changes in the App or legal requirements. The "Effective date" above will be updated accordingly. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
 <h2>Contact</h2>
-<p>Questions about this Privacy Policy or the App can be sent to:<br>
+<p>AGL Games — questions about this Privacy Policy or the App can be sent to:<br>
 <a href="mailto:aglgames.support@gmail.com">aglgames.support@gmail.com</a></p>
 
 </body>
